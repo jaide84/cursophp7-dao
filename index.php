@@ -20,10 +20,17 @@ $usuario = new Usuario();
 $usuario->login("aaaa", "999999");
 echo $usuario;*/
 
-$aluno = new Usuario("aluno", "123456");
+//Criando um novo usuário
+//$aluno = new Usuario("aluno", "123456");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
+$usuario = new Usuario();
 
-echo $aluno;
+$usuario->loadById(8);
+
+$usuario->update("professor", "!@#$%");
+
+echo $usuario;
 
  ?>
